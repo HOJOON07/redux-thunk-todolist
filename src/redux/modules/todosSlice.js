@@ -1,8 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-/**
- * 2초 지연을 시키는 함수입니다 (비동기 작업).
- */
 import { waitTwoSeconds } from "../../utils";
 
 export const __addToDo = createAsyncThunk(

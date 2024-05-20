@@ -28,10 +28,6 @@ function App() {
   const [body, setBody] = useState("");
 
   const onAddTodo = () => {
-    /**
-     * 시험 문제 1.
-     * 이곳에서 추가하기 기능을 구현해주세요.
-     */
     dispatch(
       __addToDo({
         title,
@@ -44,16 +40,9 @@ function App() {
 
   const onDeleteTodo = (id) => {
     dispatch(__deleteTodo({ id }));
-    /**
-     * 시험 문제 2.
-     * 이곳에서 삭제하기 기능을 구현해주세요.
-     */
   };
 
   const resetInputs = () => {
-    /**
-     * 입력 값을 초기화하고 싶다면 사용하세요.
-     */
     setTitle("");
     setBody("");
   };
